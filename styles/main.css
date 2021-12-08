@@ -1,0 +1,311 @@
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.68rem;
+    font-family: 'Open Sans', "Arial", sans-serif;
+}
+/* CONTAINER STYLES */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER SECTION STYLES */
+.main-header {
+    padding: 1.5rem 0;
+    background-color: #fff;
+}
+.main-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-header__brand {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.main-header__brand:active {
+    opacity: 0.6;
+}
+.logo-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    color: #222;
+}
+.main-nav__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.main-nav__item:not(:last-child) {
+    margin-right: 2rem;
+}
+.main-nav__item a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    font-size: 0.87rem;
+    line-height: 1.31rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.main-nav__item a:active {
+    opacity: 0.6;
+}
+.main-btn {
+    display: inline-block;
+    background-color: #de2e54;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Open Sans Condensed', "Arial", sans-serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: #de2e54 2px solid;
+}
+.main-btn:hover {
+    background-color: #fff;
+    color: #de2e54;
+}
+.main-btn:active {
+    background-color: #de2e54;
+    color: #fff;
+    opacity: 0.6;
+}
+.main-nav__item a:hover, .logo-text:hover {
+    color: #de2e54;
+}
+.burger-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.12rem;
+    border: none;
+    display: none;
+}
+
+/* HERO SECTION STYLES */
+.hero {
+    padding: 7.5rem 0;
+    background-color: #0eb4c1;
+    color: #fff;
+}
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__blog-wrapper {
+    width: 500px;
+}
+.hero-title {
+    font-family: 'Open Sans Condensed', "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+}
+.hero-text {
+    max-width: 440px;
+    margin: 1rem 0 2.25rem 0;
+    line-height: 1.68rem;
+}
+.hero__btn:hover {
+    color: #fff;
+    background-color: #de2e54;
+    opacity: 0.8;
+}
+.hero__btn:active {
+    opacity: 0.6;
+}
+.hero-img {
+    width: 423px;
+    height: 504px;
+    margin-top: -5.43rem;
+    margin-bottom: -7.5rem;
+    display: block;
+}
+
+/* SERRVICES SECTION STYLES */
+.services {
+    padding: 7.5rem 1.25rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__title {
+    font-family: 'Open Sans Condensed', "Arial", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    color: #000;
+}
+.services__big-blog {
+    max-width: 904px;
+    padding: 0 1.25rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.75rem;
+}
+.services__blog {
+    display: flex;
+    align-items: center;
+}
+.services__blog:not(:last-child) {
+    margin-bottom: 5rem;
+}
+.services__img {
+    border-radius: 1.5rem;
+    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+}
+.services__tex-wrapper {
+    max-width: 600px;
+    margin-left: 4rem;
+}
+.services__tex-wrapper h3 {
+    font-family: 'Open Sans Condensed', "Arial", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: #222;
+}
+.services__tex-wrapper p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #444;
+    margin-top: 1.5rem;
+}
+
+/* CONTACT SECTION STYLES */
+.contact {
+    padding: 4rem 0;
+    background-color: #0eb4c1;
+    color: #fff;
+    text-align: center;
+}
+.contact__title {
+    font-family: 'Open Sans Condensed', "Arial", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    margin-bottom: 2.5rem;
+}
+.contact__btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-family: 'Open Sans Condensed', "Arial", sans-serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    line-height: 1.12rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.contact__btn:hover {
+    background-color: #de2e54;
+    border: 2px solid #de2e54;
+}
+.contact__btn:active {
+    opacity: 0.6;
+}
+.contact__btn:last-child {
+    margin-left: 2.5rem;
+}
+
+/* FOOTER SECTION STYLES */
+.footer {
+    padding: 1.5rem 0;
+    background-color: #222;
+}
+.footer .logo-text:hover,
+.footer .main-nav__item a:hover {
+    color: #de2e54;
+}
+.footer .logo-text,  
+.footer .logo-text:active, 
+.footer .main-nav__item a,
+.footer .main-nav__item a:active {
+    color: #fff;
+}
+
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    html {
+        font-size: 15px;
+    }
+
+    /* HEADER */
+    .header__btn{
+        display: none;
+    }
+    .main-nav {
+        display: none;
+    }
+    .burger-btn {
+        display: block;
+    }
+    .main-header__brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* HERO */
+    .hero-img {
+        display: none;
+    }
+
+    /* SERVICES */
+    .services__tex-wrapper {
+        margin-left: 0;
+    }
+    .services__img {
+        display: none;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 11px;
+    }
+    .main-header__brand img {
+        width: 30px;
+        height: 30px;
+    }
+}
